@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+flask==3.0.3
+waitress==2.1.2
+numpy==1.26.4
+tifffile==2024.8.30
+Pillow==10.4.0
+imageio==2.35.1
+torch==2.3.1
+torchvision==0.18.1
+segmentation-models-pytorch==0.3.3
+pretrainedmodels==0.7.4
+six==1.16.0
