@@ -3,7 +3,7 @@ import tifffile as tiff
 from .bands import IDX, MNDWI_POS
 
 def _ensure_hwc(arr: np.ndarray) -> np.ndarray:
-    # If CHW (C,H,W) and looks like <=12 channels, move to HWC
+    
     if arr.ndim == 3 and arr.shape[0] <= 12 and arr.shape[0] < arr.shape[-1]:
         arr = np.transpose(arr, (1, 2, 0))
     if arr.ndim == 2:
