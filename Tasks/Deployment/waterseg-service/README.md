@@ -5,16 +5,19 @@ cd "C:\Cellula\Water Segmentation\Project\Water-Segmentation\Tasks\Deployment\wa
 
 conda deactivate
 
-# 3) activate the venv
+# 3) create a venv (choose one name)
+python -m venv2 .venv   
+
+# 4) activate the venv
 
 .\.venv2\Scripts\Activate.ps1
 
-# 4) Install dependencies
+# 5) Install dependencies
 
 python -m pip install --upgrade pip setuptools wheel
 python -m pip install -r requirements.txt
 
-# 4) Run (development server)
+# 6) Run (development server)
 
 python -m flask --app wsgi:app run --debug
 
